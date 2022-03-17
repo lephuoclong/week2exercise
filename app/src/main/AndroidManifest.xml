@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Secondexercise">
         <activity
+            android:name=".features.welcome.Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".features.security.Register"
+            android:exported="false" />
+        <activity
+            android:name=".features.security.Login"
+            android:exported="false" />
+        <activity
+            android:name=".features.profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".features.onBoarding.OnboardingThree"
+            android:exported="false" />
+        <activity
+            android:name=".features.onBoarding.OnboardingTwo"
+            android:exported="false" />
+        <activity
+            android:name=".features.onBoarding.OnboardingOne"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
