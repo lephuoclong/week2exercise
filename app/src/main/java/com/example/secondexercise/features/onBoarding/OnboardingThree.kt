@@ -26,6 +26,7 @@ class OnboardingThree : AppCompatActivity(), GestureDetector.OnGestureListener {
         supportActionBar?.hide();
         setContentView(R.layout.activity_onboarding_three)
 
+    /*
         init()
 
         btnNext3?.setOnClickListener {
@@ -43,6 +44,14 @@ class OnboardingThree : AppCompatActivity(), GestureDetector.OnGestureListener {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intent)
     }
+    */
+    val btnNext3 = findViewById<Button>(R.id.btn_next_3)
+        btnNext3.setOnClickListener {
+            val intent = Intent(this@OnboardingThree,OnboardingTwo::class.java)
+            startActivity(intent)
+        }
+        
+        
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         return if (gestureDetector.onTouchEvent(event)) {
