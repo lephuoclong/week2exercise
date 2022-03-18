@@ -24,7 +24,7 @@ class OnboardingOne : AppCompatActivity(), GestureDetector.OnGestureListener {
         setContentView(R.layout.activity_onboarding_one)
         gestureDetector = GestureDetector(this)
 
-        init()
+       /* init()
 
         btnNext1?.setOnClickListener {
             goToNextActivity()
@@ -38,7 +38,13 @@ class OnboardingOne : AppCompatActivity(), GestureDetector.OnGestureListener {
     private fun goToNextActivity(){
         var intent = Intent(this, OnboardingTwo::class.java)
         startActivity(intent)
-    }
+    }    */
+    
+    val btnNext1 = findViewById<Button>(R.id.btn_next_1)
+        btnonboarding2.setOnClickListener {
+            val intent = Intent(this@OnboardingOne,OnboardingTwo::class.java)
+            startActivity(intent)
+        }
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         return if (gestureDetector.onTouchEvent(event)) {
