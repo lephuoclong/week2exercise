@@ -55,8 +55,8 @@
                 android:id="@+id/imageView5"
                 android:layout_width="181dp"
                 android:layout_height="181dp"
-                android:layout_marginRight="-190dp"
                 android:layout_marginTop="-120dp"
+                android:layout_marginRight="-190dp"
                 app:srcCompat="@drawable/ic_hinhtron" />
 
             <TextView
