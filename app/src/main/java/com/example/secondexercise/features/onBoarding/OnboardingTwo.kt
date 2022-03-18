@@ -23,7 +23,7 @@ class OnboardingTwo : AppCompatActivity(), GestureDetector.OnGestureListener {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         supportActionBar?.hide();
         setContentView(R.layout.activity_onboarding_two)
-
+/*
         init()
 
         btnNext2?.setOnClickListener {
@@ -40,6 +40,14 @@ class OnboardingTwo : AppCompatActivity(), GestureDetector.OnGestureListener {
         var intent = Intent(this, OnboardingThree::class.java)
         startActivity(intent)
     }
+    */
+    val btnNext2 = findViewById<Button>(R.id.btn_next_2)
+        btnNext2.setOnClickListener {
+            val intent = Intent(this@OnboardingTwo,OnboardingTwo::class.java)
+            startActivity(intent)
+        }
+        
+        
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         return if (gestureDetector.onTouchEvent(event)) {
