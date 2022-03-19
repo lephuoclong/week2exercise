@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
             }
-
+//sua cai gi do
             progressBar!!.visibility = View.INVISIBLE
 
             val intent = Intent(this, OnboardingOne::class.java);
