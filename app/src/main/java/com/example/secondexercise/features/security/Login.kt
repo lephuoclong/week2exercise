@@ -53,8 +53,8 @@ class Login : AppCompatActivity() {
     }
 
     private fun handleLogin() {
-        var username = txtUsername?.text.toString().trim() == "admin"
-        var password = txtPassword?.text.toString().trim() == "admin"
+        var username = txtUsername?.text.toString().trim() == "ronaldo@gmail.com"
+        var password = txtPassword?.text.toString().trim() == "123456"
 
         if(username && password) {
             Toast.makeText(this@Login, "Login Success!", Toast.LENGTH_SHORT).show()
