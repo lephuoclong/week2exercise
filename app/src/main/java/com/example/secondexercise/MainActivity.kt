@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 //sua cai gi do
+//            sadadas
             progressBar!!.visibility = View.INVISIBLE
 
             val intent = Intent(this, OnboardingOne::class.java);
